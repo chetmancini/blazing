@@ -1,4 +1,4 @@
-<pre>
+```
        (                 )  (        )          
    (   )\ )    (      ( /(  )\ )  ( /(  (       
  ( )\ (()/(    )\     )\())(()/(  )\()) )\ )    
@@ -8,7 +8,7 @@
  | _ \| |__   / _ \   / /   | |  | .` |  | (_ | 
  |___/|____| /_/ \_\ /___| |___| |_|\_|   \___| 
                                                 
-</pre>
+```
 
 # blazing
 A Clojure library for operating on Spark Streaming with Flambo
