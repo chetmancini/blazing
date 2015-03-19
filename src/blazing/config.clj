@@ -13,11 +13,6 @@
    "spark.kryoserializer.buffer.mb" "1024"
    "spark.akka.frameSize" "60"})
 
-(defn- key-to-config-string
-  "Convert a key like :spark-akka-frameSize to spark.akka.frameSize"
-  [keyword]
-  (clojure.string/replace (name keyword) #"-" "."))
-
 (defn set-master [spark-conf]
   (if-let [master (System/getenv "MASTER")]
     (conf/master spark-conf master)
