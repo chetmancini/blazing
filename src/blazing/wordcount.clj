@@ -19,7 +19,7 @@
               (conf/set "spark.akka.timeout" "300")
               (conf/set-executor-env env))
         ssc (fs/streaming-context c 2000) ;; get a streaming context with a 2 second batch interval
-        stream (fs/text-file-stream "filename")]
+        stream (fs/text-file-stream "gettysburg_address.clj")]
 
     (-> stream
         (fs/map (memfn _2))
